@@ -10,6 +10,7 @@
     "web": "expo start --web",
     "predeploy": "expo export -p web",
     "deploy": "gh-pages --nojekyll  -d dist",
+    "serve" : "rm -rf dist2 && mkdir -p dist2/portfolio && cp -r dist/* dist2/portfolio && expo serve dist2",
     "lint": "expo lint"
   },
   "dependencies": {
